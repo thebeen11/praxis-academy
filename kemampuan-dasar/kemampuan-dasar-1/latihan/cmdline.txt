@@ -1,0 +1,112 @@
+thebeen@thebeen:~$ ls
+Desktop    Downloads         Music     praxis  Templates
+Documents  examples.desktop  Pictures  Public  Videos
+
+
+thebeen@thebeen:~$ ls -R
+.:
+Desktop    Downloads         Music     praxis  Templates
+Documents  examples.desktop  Pictures  Public  Videos
+
+./Desktop:
+
+./Documents:
+
+./Downloads:
+ IMG20190817145152.jpeg      'IMG20190818145600(1).jpeg'
+ IMG20190817171523.jpeg       IMG20190818145600.jpeg
+'IMG20190817171530(1).jpeg'  'IMG20190818150106(1).jpeg'
+ IMG20190817171530.jpeg       IMG20190818150106.jpeg
+ IMG20190818101723.jpeg       IMG20190818150300.jpeg
+'IMG20190818101729(1).jpeg'  'IMG20190818150306(1).jpeg'
+ IMG20190818101729.jpeg       IMG20190818150306.jpeg
+ IMG20190818143718.jpeg       IMG20190818200208.jpeg
+ IMG20190818143730.jpeg      'IMG20190818200217(1).jpeg'
+ IMG20190818145544.jpeg       IMG20190818200217.jpeg
+ IMG20190818145549.jpeg
+
+./Music:
+
+./Pictures:
+
+./praxis:
+kemampuan-dasar-1
+
+./praxis/kemampuan-dasar-1:
+latihan
+
+./praxis/kemampuan-dasar-1/latihan:
+cmdline.txt  env.txt  grub  kernel-linux.txt
+
+./Public:
+
+./Templates:
+
+./Videos:
+
+
+thebeen@thebeen:~$ ls -all
+total 100
+drwxr-xr-x 17 thebeen thebeen 4096 Agu 31 20:49 .
+drwxr-xr-x  4 root    root    4096 Sep  1  2019 ..
+-rw-------  1 thebeen thebeen  193 Agu 31 21:19 .bash_history
+-rw-r--r--  1 thebeen thebeen  220 Sep  1  2019 .bash_logout
+-rw-r--r--  1 thebeen thebeen 3771 Sep  1  2019 .bashrc
+drwx------ 18 thebeen thebeen 4096 Agu 31 19:31 .cache
+drwx------ 14 thebeen thebeen 4096 Agu 31 19:06 .config
+drwxr-xr-x  2 thebeen thebeen 4096 Sep  1  2019 Desktop
+drwxr-xr-x  2 thebeen thebeen 4096 Sep  1  2019 Documents
+drwxr-xr-x  2 thebeen thebeen 4096 Agu 31 19:11 Downloads
+-rw-r--r--  1 thebeen thebeen 8980 Sep  1  2019 examples.desktop
+drwx------  3 thebeen thebeen 4096 Agu 31 19:01 .gnupg
+-rw-------  1 thebeen thebeen  966 Agu 31 20:17 .ICEauthority
+drwx------  3 thebeen thebeen 4096 Sep  1  2019 .local
+drwx------  5 thebeen thebeen 4096 Agu 31 18:49 .mozilla
+drwxr-xr-x  2 thebeen thebeen 4096 Sep  1  2019 Music
+drwxr-xr-x  2 thebeen thebeen 4096 Sep  1  2019 Pictures
+drwxr-xr-x  3 thebeen thebeen 4096 Agu 31 19:04 praxis
+-rw-r--r--  1 thebeen thebeen  807 Sep  1  2019 .profile
+drwxr-xr-x  2 thebeen thebeen 4096 Sep  1  2019 Public
+drwx------  2 thebeen thebeen 4096 Agu 31 19:01 .ssh
+-rw-r--r--  1 thebeen thebeen    0 Agu 31 20:49 .sudo_as_admin_successful
+drwxr-xr-x  2 thebeen thebeen 4096 Sep  1  2019 Templates
+drwxr-xr-x  2 thebeen thebeen 4096 Sep  1  2019 Videos
+
+
+thebeen@thebeen:~$ cat > sample1
+This is sample1
+
+
+thebeen@thebeen:~$ cat sample1
+This is sample1
+
+
+thebeen@thebeen:~$ cat > sample2
+This is sample2 
+
+
+thebeen@thebeen:~$ cat sample1 sample2 > sample
+
+
+thebeen@thebeen:~$ cat sample
+This is sample1
+This is sample2
+
+
+thebeen@thebeen:~$ ls
+Desktop    Downloads         Music     praxis  sample   Templates
+Documents  examples.desktop  Pictures  Public  sample2  Videos
+thebeen@thebeen:~$ rm sample2
+thebeen@thebeen:~$ ls
+Desktop    Downloads         Music     praxis  sample     Videos
+Documents  examples.desktop  Pictures  Public  Templates
+thebeen@thebeen:~$ mv sample /home/thebeen/Documents
+
+
+thebeen@thebeen:~$ mkdir mydirectory
+thebeen@thebeen:~$ ls
+Desktop    Downloads         Music        Pictures  Public     Videos
+Documents  examples.desktop  mydirectory  praxis    Templates
+thebeen@thebeen:~$ 
+
+
