@@ -1,0 +1,31 @@
+<form name="selectForm">
+  <p>
+    <label for="jenisBuah">pilih beberapa buah:</label>
+    <select id="jenisBuah" name="jenisBuah" multiple="multiple">
+      <option selected="selected">Sirsak</option>
+      <option>Mangga</option>
+      <option>jeruk</option>
+      <option>Anggur</option>
+      <option>Pepaya</option>
+      <option>Apel</option>
+    </select>
+  </p>
+  <p><input id="btn" type="button" value="Berapa Buah yang dipilih?" /></p>
+</form>
+
+<script>
+function jumlahBuah(pilihanBuah) {
+  var jumlahAwal = 0;
+  for (var i = 0; i < pilihanBuah.length; i++) {
+    if (pilihanBuah[i].selected) {
+      jumlahAwal++;
+    }
+  }
+  return jumlahAwal;
+}
+
+var btn = document.getElementById('btn');
+btn.addEventListener('click', function() {
+  alert('Buah yang dipilih: ' + jumlahBuah(document.selectForm.jenisBuah));
+});
+</script>
