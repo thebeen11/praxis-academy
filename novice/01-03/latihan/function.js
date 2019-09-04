@@ -1,6 +1,6 @@
-// mendefinisikan funtion
-function tambah(a, b) {
-    console.log(a+b);
-}
+//fungsi adalah sebuah subprogram untuk melakukan sebuah tugas yang biasanya dilakukan secara berulang-ulang agar tidak perlu menuliskanya kembali
 
-tambah(4, 2);
+// Function Declaration
+function name(parameters){
+    return statements;
+  }
