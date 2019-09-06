@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Kasus 1: Verifikasi Email</title>
+    <script type="text/javascript">  
+    var re = /^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,15})$/;  
+    function testInfo(emailInp) {  
+      var OK = re.exec(emailInp.value);  
+      if (!OK)  
+        window.alert(emailInp.value + ' bukan email');  
+      else
+        window.alert('Halo, username anda adalah username, domain anda adalah ' +OK[0]);  
+    }  
+  </script>  
+</head>  
+<body>  
+  <p>Masukkan Email.
+      <br></p>
+  <form action="#">  
+    <input id="email"><button onclick="testInfo(document.getElementById('email'));">Check</button>
+  </form>  
+</body>  
+</html>

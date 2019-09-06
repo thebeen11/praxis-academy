@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Kasus 1: Verifikasi Plat Nomor</title>
+    <script type="text/javascript">  
+    var re = /(?:^[A-Z]{1,2})+|(-[0-9]{1,4})+-|([A-Z]{1,3})\b$/g;  
+    function testInfo(platNomotInp) {  
+      var OK = re.exec(platNomotInp.value);  
+      if (!OK)  
+        window.alert(platNomotInp.value + ' bukan Plat Nomor Indonesia');  
+      else
+        window.alert(OK[0] +' Plat nomer');  
+    }  
+  </script>  
+</head>  
+<body>  
+  <p>Masukkan Plat Nomer.
+      <br>Gunakan Format AA-1234-QWE.</p>
+  <form action="#">  
+    <input id="plat"><button onclick="testInfo(document.getElementById('plat'));">Check</button>
+  </form>  
+</body>  
+</html>
