@@ -17,5 +17,3 @@ spot.speak();
 
 spot = new Animal('Spot');
 spot.speak();
-
-

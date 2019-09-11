@@ -16,5 +16,5 @@ class Vehicle {
 
 let car = new Vehicle("Honda", "Accord", "Purple");
 
- // "purple"
+
 console.log(Vehicle.getColor(car));
