@@ -1,0 +1,1 @@
+btn.removeEventListener('click',foo);
